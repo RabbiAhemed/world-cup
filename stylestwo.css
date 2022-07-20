@@ -6,6 +6,10 @@ h1:hover{
     color: black;
 }
 
+footer h2{
+    font-family: 'Staatliches';
+}
+
 .twoFlag{
     display: flex;
     flex-direction: row;
@@ -23,17 +27,13 @@ h1:hover{
     border-radius: 5px;
     color: aliceblue;
 }
-footer h2{
-    font-family: 'Staatliches';
-}
-
 #first-button :hover{
 /* background-color: aqua; */
 }
 
 /* media queries */
 /* for large devices (laptops/desktops, 992px and up) */
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 992px) {
     #banner{
         background-color: black;
         color: white;
@@ -47,6 +47,7 @@ footer h2{
     #title{
         font-size:50px;
         font-weight:bold;
+        
         font-family: 'Staatliches';
     }
 
@@ -75,16 +76,12 @@ footer h2{
         background-color: black;
         border-radius: 5px;
         height: 330px;
-        width: 1000px;
+        width: 250px;
         position: relative;
         left: 50px;
-        top: -60px;
+        top: -15px;
         color: aliceblue;
 
-    }
-    .menu a{
-        margin:2% 0;
-        text-decoration: none;
     }
     #upcoming{
         font-size: large;
@@ -140,7 +137,7 @@ footer h2{
 
 /* for tablets */
 
-@media screen and (min-width:481px) and ( max-width: 768px) {
+@media screen and (min-width:577px) and ( max-width: 992px) {
     
         #banner{
             background-color: black;
@@ -178,9 +175,8 @@ footer h2{
             text-align: center;
     
         }
-        .menu a{
-            margin:0 2%;
-            text-decoration: none;
+        .menu h4{
+            margin: 0 10px;
         }
         
         #upcoming{
@@ -236,7 +232,7 @@ footer h2{
         
         
 /* for mobile devices*/
-@media  screen and (max-width: 480px) {
+@media  screen and (max-width: 576px) {
     #banner{
         background-color: black;
         color: white;
@@ -254,11 +250,6 @@ footer h2{
     flex-direction: column;
         color: black;
 
-    }
-    
-    .menu a{
-        margin:2% 0;
-        text-decoration: none;
     }
     .grid-container {
         margin: 0 auto;
