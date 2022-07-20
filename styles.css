@@ -89,6 +89,24 @@ body{
     #view-button{
         visibility: hidden;
     }
+
+    footer{
+        height: 500px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    #bottom{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    #bottom p{
+        padding: 0 2%;
+    }
 }
 
 /* for tablets */
