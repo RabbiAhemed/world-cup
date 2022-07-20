@@ -1,5 +1,5 @@
 body{
-    margin: auto;
+    margin: 0px;
 }
 
 .button{
@@ -21,8 +21,13 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 0 3%;
+        padding: 3%;
         border-radius: 10px;
+    }
+    #title{
+        font-size:50px;
+        font-weight:bold;
     }
 
     #banner img{
@@ -112,6 +117,7 @@ body{
 /* for tablets */
 
 @media screen and (min-width:577px) and ( max-width: 992px) {
+    
         #banner{
             background-color: black;
             color: white;
@@ -128,7 +134,7 @@ body{
         width: 100%;
     }
         .grid-container {
-            /* margin: 0 auto; */
+            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 50px;
@@ -144,17 +150,65 @@ body{
         .menu{
             display: flex;
             justify-content: center;
-            padding: 0 10px;
             margin:100px auto;
+            text-align: center;
     
         }
+        .menu h4{
+            margin: 0 10px;
+        }
+        
+        #upcoming{
+            font-size: large;
+            color: black;
+            border: 2px solid silver;
+            padding:20px 10px;
+            border-radius: 5px;
+            
+        }
+        #allgroup{
+            font-size: large;
+            color: black;
+            border: 2px solid silver;
+            background-color: white;
+            padding:20px 35px;
+            border-radius: 5px;
+        }
+    #different-bg{
+        font-size: large;
+        color: white;
+        background-color: orangered;
+        padding:20px 55px;
+        border-radius: 5px;
+    
+    }
+    
         
         #view-button{
             visibility:visible;
             text-align: center;
         }
-        
+
+        footer{
+            height: 500px;
+            background-color: black;
+            color: white;
+            text-align: center;
         }
+        #bottom{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+        }
+        #bottom p{
+            padding: 0 2%;
+        }
+    }
+        
+        
 /* for mobile devices*/
 @media  screen and (max-width: 576px) {
     #banner{
@@ -174,6 +228,20 @@ body{
     flex-direction: column;
         color: black;
 
+    }
+    .grid-container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        /* padding: 0 auto; */
+      }
+      .grid-item {
+        background-color:azure;
+        border: 1px solid silver;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
     }
     #upcoming{
         font-size: large;
@@ -204,6 +272,13 @@ body{
 
     #view-button{
         display: none;
+    }
+
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding-bottom: 10%;
     }
     
   }
