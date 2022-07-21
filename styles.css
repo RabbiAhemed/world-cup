@@ -136,6 +136,12 @@ footer h2{
     #bottom p{
         padding: 0 2%;
     }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+    }
 }
 
 /* for tablets */
@@ -232,6 +238,13 @@ footer h2{
         #bottom p{
             padding: 0 2%;
         }
+        .icons{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+    
     }
         
         
@@ -311,5 +324,11 @@ footer h2{
         color: white;
         padding-bottom: 10%;
     }
-    
+    .icons{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+
   }
